@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Extension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(24, 24, 24);
+            color: white;
+            font-family: 'Poppins';
+            padding: 20px;
+            min-width: 400px;
+            border-radius: 10px;
+            min-height: fit-content;
+            font-size: 14px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        h1 {
+            color: #ff7300;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .welcome-text {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .explore-btn {
+            padding: 10px 20px;
+            background-color: #e56903;
+            border: none;
+            color: rgba(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .explore-btn:hover {
+            background-color: #d46300d7;
+        }
+
+        #feedback {
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            background-color: #252525;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            resize: vertical;
+            margin-top: 20px;
+        }
+
+        #sendBtn {
+            padding: 10px 20px;
+            background-color: #e56903;
+            border: none;
+            color: rgba(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        #sendBtn:hover {
+            background-color: #d46300d7;
+        }
+    </style>
+</head>
+<body>
+    <img src="assets/choice.png" alt="Choice Extension Logo" width="200" height="48.125">
+    <h1>Chrome Extension</h1>
+    <div class="welcome-text">
+        Choose from a variety of content to tailor your preferences. Discover new favorites and enjoy a personalized experience!
+    </div>
+    <div class="button-container">
+        <button class="explore-btn">Explore Content</button>
+    </div>
+    <textarea id="feedback" placeholder="Enter your feedback here..."></textarea>
+    <button id="sendBtn">Submit</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>

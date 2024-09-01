@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Extension</title>
+    <style>
+        body {
+            background-color: rgb(24, 24, 24);
+            color: white; /* Default font color */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            min-width: 250px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff7300; /* Orange font color */
+            font-size: 18px; /* Smaller font size */
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: fit-content;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 165, 0, 0.2); /* Orange border with opacity */
+            background-color:  #252525;
+            color: white; /* Default font color */
+            font-size: 14px; /* Smaller font size */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #saveBtn {
+            padding: 10px 20px;
+            background-color: rgb(255 255 255 / 20%);
+            border: white 1px; /* White border */
+            color: rgba(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #saveBtn:hover {
+            background-color: rgba(183, 91, 0, 0.8); /* Orange background with opacity */
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Confidence Score</h1>
+    <input type="text" id="confidenceScore">
+    <br> <!-- Add a line break -->
+    <button id="saveBtn">Save</button>
+    <!-- <script type="module" src="jio_cinema.js"></script> -->
+
+    <script src="popup.js"></script>
+    <!-- <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19.4/auth0-spa-js.production.js"></script> -->
+</body>
+</html>
+

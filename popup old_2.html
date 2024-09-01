@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice Extension</title>
+    <style>
+        body {
+            background-color: rgb(24, 24, 24);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            min-width: 400px;
+            border-radius: 10px;
+            min-height: fit-content;
+        }
+
+        h1 {
+            color: #ff7300;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        a {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            padding: 10px;
+            background-color: #252525;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: rgba(255, 129, 2, 0.435);
+        }
+
+        #feedback {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid rgba(255, 165, 0, 0.2);
+            background-color: #252525;
+            color: white;
+            font-size: 14px;
+            border-radius: 5px;
+            resize: none;
+            margin-top: 20px;
+        }
+
+        #sendBtn {
+            padding: 10px 20px;
+            background-color: rgb(255 255 255 / 20%);
+            border: white 1px;
+            color: rgba(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #sendBtn:hover {
+            background-color: rgba(183, 91, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <h1>Choice Extension</h1>
+    <div class="link-grid">
+        <a href="https://www.youtube.com/watch?v=iAIBF2ngbWY" target="_blank">ANIMAL: Pehle Bhi Main</a>
+        <a href="https://www.youtube.com/watch?v=uSibwB2TQC4" target="_blank">Hale Dil Tujhko Sunata Murder 2</a>
+        <a href="https://www.jiocinema.com/movies/cocktail/3486606" target="_blank">CockTail</a>
+        <a href="https://www.jiocinema.com/movies/sergeant/3767716" target="_blank">Sergeant</a>
+        <a href="https://www.jiocinema.com/movies/singham-returns/3491631" target="_blank">Singham Returns</a>
+        <a href="https://www.jiocinema.com/movies/bloody-daddy/3760812" target="_blank">Bloody Daddy</a>
+        <a href="https://www.youtube.com/watch?v=VOLKJJvfAbg" target="_blank">Bhekhayali Song</a>
+        <a href="https://www.youtube.com/watch?v=xycd6Kgk27c" target="_blank">Yeh Jism Full Video Song</a>
+        <a href="https://www.youtube.com/watch?v=__ZvXBf1rmw" target="_blank">WAJAH TUM HO</a>
+    </div>
+    <textarea id="feedback" placeholder="Enter your feedback here..."></textarea>
+    <button id="sendBtn">Submit</button>
+
+    <script src="popup.js"></script>
+    <!-- <script src="https://cdn.auth0.com/js/auth0-spa-js/1.19.4/auth0-spa-js.production.js"></script> -->
+</body>
+</html>
